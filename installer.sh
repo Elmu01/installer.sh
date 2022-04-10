@@ -4,8 +4,8 @@
 sudo pacman -Syu
 
 #update nvidia-drivers
-Sudo pacman -S nvidia
+sudo pacman -S nvidia
 
-#YAY
-Sudo pacman -S yay zsh brave-bin bitwarden discord tidal-hifi-bin steam-native-runtime
+#Apps
+sudo pacman -S yay zsh brave-bin bitwarden discord tidal-hifi-bin steam-native-runtime
 
