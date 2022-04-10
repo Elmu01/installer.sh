@@ -12,3 +12,7 @@ sudo pacman -S yay zsh bashtop bitwarden discord steam grub-customizer solaar lu
 #apss from yay
 yay -S brave-bin tidal-hifi-bin octopi noisetorch-bin authy --noconfirm
 
+
+
+#automatic reboot
+systemctl reboot
