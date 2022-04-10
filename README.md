@@ -6,7 +6,7 @@ Because i'm noob, i need write instructions for myself :--D
 
 Upload:  
 1. git add installer.sh
-2. git commit -m "mitä muutettu?"
+2. git commit -m "write here what is changed?"
 3. git push
 
 After git clone: Run: bash installer.sh
