@@ -7,8 +7,8 @@ sudo pacman -Syu
 sudo pacman -S nvidia
 
 #Apps from pacman
-sudo pacman -S yay zsh octopi bashtop bitwarden discord steam-native-runtime grub-customizer solaar 
+sudo pacman -S yay zsh bashtop bitwarden discord steam-native-runtime grub-customizer solaar 
 
 #apss from yay
-yay -S brave-bin tidal-hifi-bin
+yay -S brave-bin tidal-hifi-bin octopi
 
