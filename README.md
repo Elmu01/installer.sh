@@ -9,4 +9,7 @@ Upload:
 2. git commit -m "write here what is changed?"
 3. git push
 
-After git clone: Run: bash installer.sh
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Elmu01/installer.sh/main/installer.sh | bash
+```
