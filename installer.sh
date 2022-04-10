@@ -6,6 +6,9 @@ sudo pacman -Syu
 #update nvidia-drivers
 sudo pacman -S nvidia
 
-#Apps
-sudo pacman -S yay zsh octopi bashtop brave-bin bitwarden discord tidal-hifi-bin steam-native-runtime grub-customizer solaar 
+#Apps from pacman
+sudo pacman -S yay zsh octopi bashtop bitwarden discord steam-native-runtime grub-customizer solaar 
+
+#apss from yay
+yay -S brave-bin tidal-hifi-bin
 
