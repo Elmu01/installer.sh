@@ -1,8 +1,8 @@
 # installer.sh
-This script install basic apps what i use daily for my computer. Works with EndeavourOS
+This script installs basic programs that i use daily for my pc. Works with Arch Linux.
 
 
-Because i'm noob, i need write instructions for myself :--D
+Because i'm a noob, i need to write instructions for myself :--D
 
 Upload:  
 1. git add installer.sh
