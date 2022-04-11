@@ -19,8 +19,38 @@ echo -e "$BANNER"
 #update system
 sudo pacman -Syu --noconfirm 
 
-#installs nvidia gpu drivers
-sudo pacman -S nvidia --noconfirm --needed
+
+#installs gpu drivers
+PS3="Select your graphics: "
+
+toinstall=()
+
+select graphics in nvidia amd intel virtualbox; do
+  case $graphics in
+    nvidia)
+      toinstall+=("nvidia" "nvidia-lts" "nvidia-settings" "lib32-nvidia-utils")
+    break 
+      ;;
+    amd)
+      toinstall+=("mesa" "lib32-mesa" "xf86-video-amdgpu" "vulkan-radeon" "lib32-vulkan-radeon" "libva-mesa-driver")
+    break 
+      ;;
+    intel)
+      toinstall+=("mesa" "lib32-mesa" "xf86-video-intel" "vulkan-intel" "lib32-vulkan-intel" "intel-media-driver")
+    break 
+      ;;
+    virtualbox)
+      toinstall+=("virtualbox-guest-utils")
+    break 
+      ;;
+    *)
+      echo "Invalid option $REPLY"
+      ;;
+  esac
+done
+
+sudo pacman -S "${toinstall[@]}" --noconfirm --needed
+
 
 #installs the programs from pacman
 sudo pacman -S yay zsh bashtop bitwarden discord steam grub-customizer solaar lutris ksysguard --noconfirm --needed
