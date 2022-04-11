@@ -1,18 +1,13 @@
 #!/bin/bash
 
 read -r -d '' BANNER << EOF
- ________ __                       __               __                     __              __ __                                                   __            __     
-|        \  \                     |  \             |  \                   |  \            |  \  \                                                 |  \          |  \    
-| ▓▓▓▓▓▓▓▓ ▓▓______ ____  __    __| ▓▓ _______      \▓▓_______   _______ _| ▓▓_    ______ | ▓▓ ▓▓ ______   ______        _______  _______  ______  \▓▓ ______  _| ▓▓_   
-| ▓▓__   | ▓▓      \    \|  \  |  \\▓ /       \    |  \       \ /       \   ▓▓ \  |      \| ▓▓ ▓▓/      \ /      \      /       \/       \/      \|  \/      \|   ▓▓ \  
-| ▓▓  \  | ▓▓ ▓▓▓▓▓▓\▓▓▓▓\ ▓▓  | ▓▓  |  ▓▓▓▓▓▓▓    | ▓▓ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓\▓▓▓▓▓▓   \▓▓▓▓▓▓\ ▓▓ ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\    |  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\\▓▓▓▓▓▓  
-| ▓▓▓▓▓  | ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓   \▓▓    \     | ▓▓ ▓▓  | ▓▓\▓▓    \  | ▓▓ __ /      ▓▓ ▓▓ ▓▓ ▓▓    ▓▓ ▓▓   \▓▓     \▓▓    \| ▓▓     | ▓▓   \▓▓ ▓▓ ▓▓  | ▓▓ | ▓▓ __ 
-| ▓▓_____| ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓__/ ▓▓   _\▓▓▓▓▓▓\    | ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ | ▓▓|  \  ▓▓▓▓▓▓▓ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓ ▓▓           _\▓▓▓▓▓▓\ ▓▓_____| ▓▓     | ▓▓ ▓▓__/ ▓▓ | ▓▓|  \
-| ▓▓     \ ▓▓ ▓▓ | ▓▓ | ▓▓\▓▓    ▓▓  |       ▓▓    | ▓▓ ▓▓  | ▓▓       ▓▓  \▓▓  ▓▓\▓▓    ▓▓ ▓▓ ▓▓\▓▓     \ ▓▓          |       ▓▓\▓▓     \ ▓▓     | ▓▓ ▓▓    ▓▓  \▓▓  ▓▓
- \▓▓▓▓▓▓▓▓\▓▓\▓▓  \▓▓  \▓▓ \▓▓▓▓▓▓    \▓▓▓▓▓▓▓      \▓▓\▓▓   \▓▓\▓▓▓▓▓▓▓    \▓▓▓▓  \▓▓▓▓▓▓▓\▓▓\▓▓ \▓▓▓▓▓▓▓\▓▓           \▓▓▓▓▓▓▓  \▓▓▓▓▓▓▓\▓▓      \▓▓ ▓▓▓▓▓▓▓    \▓▓▓▓ 
-                                                                                                                                                     | ▓▓               
-                                                                                                                                                     | ▓▓               
-                                                                                                                                                      \▓▓               
+
+
+  ___                             ___  
+ (o o)                           (o o) 
+(  V  ) Elmu's installer script (  V  )
+--m-m-----------------------------m-m--
+
 
 EOF
 
@@ -24,17 +19,17 @@ echo -e "$BANNER"
 #update system
 sudo pacman -Syu --noconfirm 
 
-#update nvidia-drivers
+#installs nvidia gpu drivers
 sudo pacman -S nvidia --noconfirm --needed
 
-#Apps from pacman
+#installs the programs from pacman
 sudo pacman -S yay zsh bashtop bitwarden discord steam grub-customizer solaar lutris ksysguard --noconfirm --needed
 
-#apss from yay
-yay -S brave-bin tidal-hifi-bin octopi noisetorch-bin authy nvtop-git plank --noconfirm --needed
+#installs the programs from yay
+yay -S brave-bin tidal-hifi-bin noisetorch-bin authy nvtop-git plank --noconfirm --needed
 
 
-#change bash to zsh
+#change shell from bash to zsh
 chsh -s /bin/zsh
 
 #automatic reboot
