@@ -1,5 +1,5 @@
 # installer.sh
-This script install basic apps what i use daily for my computer. EndeavourOS
+This script install basic apps what i use daily for my computer. Works with EndeavourOS
 
 
 Because i'm noob, i need write instructions for myself :--D
