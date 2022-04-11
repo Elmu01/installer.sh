@@ -28,23 +28,23 @@ toinstall=()
 select graphics in nvidia amd intel virtualbox; do
   case $graphics in
     nvidia)
-      toinstall+=("nvidia" "nvidia-lts" "nvidia-settings" "lib32-nvidia-utils")
+      toinstall+=(nvidia nvidia-lts nvidia-settings lib32-nvidia-utils)
     break 
       ;;
     amd)
-      toinstall+=("mesa" "lib32-mesa" "xf86-video-amdgpu" "vulkan-radeon" "lib32-vulkan-radeon" "libva-mesa-driver")
+      toinstall+=(mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon libva-mesa-driver)
     break 
       ;;
     intel)
-      toinstall+=("mesa" "lib32-mesa" "xf86-video-intel" "vulkan-intel" "lib32-vulkan-intel" "intel-media-driver")
+      toinstall+=(mesa lib32-mesa xf86-video-intel vulkan-intel lib32-vulkan-intel intel-media-driver)
     break 
       ;;
     virtualbox)
-      toinstall+=("virtualbox-guest-utils")
+      toinstall+=(virtualbox-guest-utils)
     break 
       ;;
     *)
-      echo "Invalid option $REPLY"
+      echo Invalid option $REPLY
       ;;
   esac
 done
