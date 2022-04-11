@@ -13,3 +13,8 @@ Upload:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/Elmu01/installer.sh/main/installer.sh | bash
 ```
+Link is broke atm. I need to fix it. :)) 
+1. cd Downloads
+2. git clone https://github.com/Elmu01/installer.sh.git
+3. cd installer.sh
+3. bash installer.sh
