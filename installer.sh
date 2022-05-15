@@ -53,11 +53,13 @@ sudo pacman -S "${toinstall[@]}" --noconfirm --needed
 
 
 #installs the programs from pacman
-sudo pacman -S yay zsh bashtop bitwarden discord steam grub-customizer solaar lutris ksysguard --noconfirm --needed
+sudo pacman -S yay zsh bashtop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak --noconfirm --needed
 
 #installs the programs from yay
 yay -S brave-bin tidal-hifi-bin noisetorch-bin authy nvtop-git plank --noconfirm --needed
 
+#installs the program from flatpak
+flatpak install flathub sh.cider.Cider
 
 #change shell from bash to zsh
 chsh -s /bin/zsh
