@@ -53,13 +53,17 @@ sudo pacman -S "${toinstall[@]}" --noconfirm --needed
 
 
 #installs the programs from pacman
-sudo pacman -S yay zsh bashtop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak --noconfirm --needed
+sudo pacman -S yay zsh btop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak --noconfirm --needed
 
 #installs the programs from yay
-yay -S brave-bin tidal-hifi-bin noisetorch-bin authy nvtop-git plank plex-desktop --noconfirm --needed
+yay -S brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat-git bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher-bin mullvad-vpn-bin cava --noconfirm --needed
 
 #installs the program from flatpak
-#flatpak install flathub sh.cider.Cider
+flatpak install flathub sh.cider.Cider
+
+#Powerlevel10K
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 #change shell from bash to zsh
 chsh -s /bin/zsh
