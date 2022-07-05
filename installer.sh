@@ -56,7 +56,7 @@ sudo pacman -S "${toinstall[@]}" --noconfirm --needed
 sudo pacman -S yay zsh btop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak --noconfirm --needed
 
 #installs the programs from yay
-yay -S brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat-git bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher-bin mullvad-vpn-bin cava --noconfirm --needed
+yay -S brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat-git bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher-bin mullvad-vpn-bin cava piavpn-bin --noconfirm --needed
 
 #installs the program from flatpak
 flatpak install flathub sh.cider.Cider
