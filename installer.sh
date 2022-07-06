@@ -59,7 +59,7 @@ sudo pacman -S yay zsh btop bitwarden discord steam grub-customizer solaar lutri
 yay -S brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat-git bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher-bin mullvad-vpn-bin cava piavpn-bin --noconfirm --needed
 
 #installs the program from flatpak
-flatpak install flathub sh.cider.Cider
+flatpak install flathub sh.cider.Cider flatpak install flathub com.slack.Slack
 
 #Powerlevel10K
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
