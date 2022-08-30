@@ -56,10 +56,10 @@ sudo pacman -S "${toinstall[@]}" --noconfirm --needed
 sudo pacman -S yay zsh btop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak --noconfirm --needed
 
 #installs the programs from yay
-yay -S brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher mullvad-vpn-bin cava piavpn-bin noto-fonts-emoji --noconfirm --needed
+yay -S spotify brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher cava piavpn-bin noto-fonts-emoji --noconfirm --needed
 
 #installs the program from flatpak
-flatpak install flathub sh.cider.Cider --noconfirm --needed
+# --noconfirm --needed
 
 #Powerlevel10K
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
