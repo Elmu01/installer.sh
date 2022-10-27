@@ -62,8 +62,8 @@ yay -S spotify brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirs
 flatpak install flathub io.github.Foldex.AdwSteamGtk
 
 #starship preset
-echo 'eval "$(starship init zsh)"' > .zshrc
-starship preset pastel-powerline > .config/starship.toml
+echo 'eval "$(starship init zsh)"' > ~/.zshrc
+starship preset pastel-powerline > ~/.config/starship.toml
 
 #change shell from bash to zsh
 chsh -s /bin/zsh
