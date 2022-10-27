@@ -53,17 +53,17 @@ sudo pacman -S "${toinstall[@]}" --noconfirm --needed
 
 
 #installs the programs from pacman
-sudo pacman -S yay zsh btop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak --noconfirm --needed
+sudo pacman -S yay zsh btop bitwarden discord steam grub-customizer solaar lutris ksysguard flatpak starship --noconfirm --needed
 
 #installs the programs from yay
 yay -S spotify brave-bin noisetorch-bin authy nvtop-git plank plex-desktop qdirstat bleachbit-git appimagelauncher-git gnome-boxes-git signal-desktop heroic-games-launcher cava piavpn-bin noto-fonts-emoji --noconfirm --needed
 
 #installs the program from flatpak
-# --noconfirm --needed
+flatpak install flathub io.github.Foldex.AdwSteamGtk
 
-#Powerlevel10K
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+#starship preset
+echo 'eval "$(starship init zsh)"' > .zshrc
+starship preset pastel-powerline > .config/starship.toml
 
 #change shell from bash to zsh
 chsh -s /bin/zsh
