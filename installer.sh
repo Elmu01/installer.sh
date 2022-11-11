@@ -19,7 +19,7 @@ echo -e "$BANNER"
 sudo pacman -Syu --noconfirm 
 
 #installs the programs from pacman
-sudo pacman -S git zsh btop bitwarden discord steam grub-customizer solaar lutris plank bleachbit gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
+sudo pacman -S git zsh os-prober btop bitwarden discord steam grub-customizer solaar lutris plank bleachbit gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -31,7 +31,7 @@ rm -rf yay
 yay -S spotify brave-bin noisetorch-bin authy nvtop-git qdirstat appimagelauncher heroic-games-launcher cava piavpn-bin --noconfirm --needed
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk flatpak install -y flathub net.davidotek.pupgui2 
 
 #starship preset
 echo 'eval "$(starship init zsh)"' > ~/.zshrc
