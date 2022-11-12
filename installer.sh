@@ -31,7 +31,7 @@ rm -rf yay
 yay -S spotify brave-bin noisetorch-bin authy nvtop-git qdirstat appimagelauncher heroic-games-launcher cava piavpn-bin --noconfirm --needed
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk flatpak install -y flathub net.davidotek.pupgui2 
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2  
 
 #starship preset
 echo 'eval "$(starship init zsh)"' > ~/.zshrc
