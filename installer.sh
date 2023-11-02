@@ -33,6 +33,13 @@ yay -S spotify brave-bin authy qdirstat appimagelauncher heroic-games-launcher c
 #installs the program from flatpak
 flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub sh.cider.Cider flatpak flathub net.rpcs3.RPCS3
 
+#starship preset
+echo 'eval "$(starship init zsh)"' > ~/.zshrc
+starship preset pastel-powerline > ~/.config/starship.toml
+
+#change shell from bash to zsh
+chsh -s /bin/zsh
+
 #Lutris WineDependencies
 sudo pacman -S --noconfirm --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
 mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error \
@@ -40,13 +47,6 @@ lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjp
 sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama \
 ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 \
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
-
-#starship preset
-echo 'eval "$(starship init zsh)"' > ~/.zshrc
-starship preset pastel-powerline > ~/.config/starship.toml
-
-#change shell from bash to zsh
-chsh -s /bin/zsh
 
 #automatic reboot
 systemctl reboot
