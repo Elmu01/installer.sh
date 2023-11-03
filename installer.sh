@@ -31,7 +31,7 @@ rm -rf yay
 yay -S spotify brave-bin authy qdirstat appimagelauncher heroic-games-launcher cava piavpn-bin plex-desktop latte-dock-git --noconfirm --needed
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub sh.cider.Cider flatpak flathub net.rpcs3.RPCS3
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub sh.cider.Cider flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
 
 #Lutris WineDependencies
 sudo pacman -S wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
