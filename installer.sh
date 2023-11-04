@@ -26,7 +26,7 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S spotify brave-bin authy qdirstat appimagelauncher heroic-games-launcher cava piavpn-bin plex-desktop latte-dock-git --noconfirm --needed
+yay -S spotify brave-bin authy qdirstat appimagelauncher heroic-games-launcher piavpn-bin plex-desktop latte-dock-git --noconfirm --needed
 
 #installs the program from flatpak
 flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub sh.cider.Cider flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
