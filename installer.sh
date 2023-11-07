@@ -16,6 +16,9 @@ echo -e "$BANNER"
 #update system
 sudo pacman -Syu --noconfirm 
 
+#get my wallpapers folder from Github to Documents folder
+git clone https://github.com/Elmu01/installer.sh.git --branch main --single-branch /home/elmu/Documents/Wallpapers
+
 #installs the programs from pacman
 sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
 
