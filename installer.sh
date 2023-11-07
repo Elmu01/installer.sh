@@ -17,7 +17,7 @@ echo -e "$BANNER"
 sudo pacman -Syu --noconfirm 
 
 #get my wallpapers folder from Github to Documents folder
-git clone https://github.com/Elmu01/installer.sh.git --branch main --single-branch --depth 1 /home/elmu/Wallpapers
+git clone https://github.com/Elmu01/installer.sh.git --branch main --single-branch --depth 1 /home/elmu/Documents/Wallpapers
 cd /home/elmu/Wallpapers
 rm -f installer.sh readme.md
 
