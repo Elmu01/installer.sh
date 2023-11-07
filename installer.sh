@@ -19,7 +19,13 @@ sudo pacman -Syu --noconfirm
 #get my wallpapers folder from Github to Documents folder
 git clone https://github.com/Elmu01/installer.sh.git --branch main --single-branch --depth 1 /home/elmu/Documents/Wallpapers
 cd /home/elmu/Documents/Wallpapers
-rm -f installer.sh readme.md
+rm -f installer.sh README.md
+rm -rf .git
+mkdir /tmp/temp_wallpapers
+mv /home/elmu/Documents/Wallpapers/* /tmp/temp_wallpapers
+rm -rf /home/elmu/Documents/Wallpapers
+mv /tmp/temp_wallpapers/* /home/elmu/Documents/Wallpapers
+rm -rf /tmp/temp_wallpapers
 
 #installs the programs from pacman
 sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
