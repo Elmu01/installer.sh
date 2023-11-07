@@ -18,7 +18,7 @@ sudo pacman -Syu --noconfirm
 
 #get my wallpapers folder from Github to Documents folder
 git clone https://github.com/Elmu01/installer.sh.git --branch main --single-branch --depth 1 /home/elmu/Documents/Wallpapers
-cd /home/elmu/Wallpapers
+cd /home/elmu/Documents/Wallpapers
 rm -f installer.sh readme.md
 
 #installs the programs from pacman
