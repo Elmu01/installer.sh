@@ -22,7 +22,7 @@ mv installer/Wallpapers /home/elmu/Documents/
 rm -rf installer
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden variety discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
