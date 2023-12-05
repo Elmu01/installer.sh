@@ -22,7 +22,7 @@ mv installer/Wallpapers $HOME/Documents/
 rm -rf installer
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden variety discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -31,10 +31,10 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S spotify brave-bin authy qdirstat appimagelauncher heroic-games-launcher piavpn-bin plex-desktop latte-dock-git --noconfirm --needed
+yay -S spotify authy qdirstat appimagelauncher heroic-games-launcher plex-desktop latte-dock-git --noconfirm --needed
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub sh.cider.Cider flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
 
 #Lutris WineDependencies
 sudo pacman -S wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
@@ -43,7 +43,6 @@ lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjp
 sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama \
 ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 \
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
-
 
 #starship preset
 echo 'eval "$(starship init zsh)"' > ~/.zshrc
