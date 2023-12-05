@@ -22,7 +22,7 @@ mv installer/Wallpapers $HOME/Documents/
 rm -rf installer
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard flatpak starship --noconfirm --needed
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard code flatpak starship --noconfirm --needed
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -31,7 +31,7 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S spotify authy qdirstat appimagelauncher heroic-games-launcher plex-desktop latte-dock-git --noconfirm --needed
+yay -S spotify authy qdirstat appimagelauncher heroic-games-launcher plex-desktop latte-dock-git ttf-firacode-nerd --noconfirm --needed
 
 #installs the program from flatpak
 flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
