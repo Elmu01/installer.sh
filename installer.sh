@@ -36,7 +36,7 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S spotify authy qdirstat appimagelauncher heroic-games-launcher plex-desktop onedriver latte-dock-git mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
+yay -S neofetch spotify authy qdirstat appimagelauncher heroic-games-launcher plex-desktop onedriver latte-dock-git mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
 
 #installs the program from flatpak
 flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
