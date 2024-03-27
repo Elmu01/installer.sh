@@ -36,7 +36,11 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S webapp-manager neofetch micro spotify authy qdirstat appimagelauncher heroic-games-launcher plex-desktop onedriver latte-dock-git mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
+yay -S webapp-manager vesktop neofetch micro spotify qdirstat appimagelauncher heroic-games-launcher plex-desktop onedriver mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
+
+#Virt-manager
+yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm --yes
+sudo systemctl enable libvirtd.socket
 
 #installs the program from flatpak
 flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
