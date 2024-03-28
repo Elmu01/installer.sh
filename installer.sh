@@ -39,7 +39,7 @@ rm -rf yay
 yay -S webapp-manager vesktop neofetch micro spotify qdirstat appimagelauncher heroic-games-launcher plex-desktop onedriver mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
 
 #Virt-manager
-yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm --yes
+yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm
 sudo systemctl enable libvirtd.socket
 
 #installs the program from flatpak
