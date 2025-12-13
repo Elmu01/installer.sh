@@ -27,7 +27,7 @@ git remote set-url origin git@github.com:Elmu01/installer.sh.git
 cd ../..
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris plank gnome-boxes signal-desktop noto-fonts-emoji ksysguard code flatpak starship --noconfirm --needed
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris noto-fonts-emoji ksysguard code flatpak starship --noconfirm --needed
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -36,14 +36,14 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S webapp-manager vesktop neofetch micro spotify qdirstat appimagelauncher heroic-games-launcher plex-desktop onedriver mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
+yay -S webapp-manager vesktop fastfetch micro spotify appimagelauncher heroic-games-launcher onedriver mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
 
 #Virt-manager
 yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm
 sudo systemctl enable libvirtd.socket
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter flatpak flathub com.github.wwmm.easyeffects
 
 #Lutris WineDependencies
 sudo pacman -S wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
