@@ -28,7 +28,7 @@ git remote set-url origin git@github.com:Elmu01/installer.sh.git
 cd ../..
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris noto-fonts-emoji ksysguard code flatpak starship --noconfirm --needed
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris noto-fonts-emoji ksysguard code flatpak --noconfirm --needed
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -56,6 +56,7 @@ lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader l
 
 
 #starship preset
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 echo 'eval "$(starship init zsh)"' > ~/.zshrc
 starship preset pastel-powerline > ~/.config/starship.toml
 
