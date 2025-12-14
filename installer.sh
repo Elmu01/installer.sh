@@ -53,13 +53,31 @@ ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-li
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
 
 
-#starship preset
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-echo 'eval "$(starship init zsh)"' > ~/.zshrc
-starship preset pastel-powerline > ~/.config/starship.toml
+#Asennetaanko Starshipin
+read -p "Haluatko asentaa Starshipin? (y/n): " -n 1 -r
+echo    # uusi rivi
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "Asennetaan Starship..."
+    sh -c "$(curl -fsSL https://starship.rs/install.sh)" --noconfirm
 
-#change shell from bash to zsh
-chsh -s /bin/zsh
+    # Mitä shelliä käytetään
+    read -p "Mitä shelliä haluat käyttää? (bash/zsh/fish): " shell_choice
+    if [[ $shell_choice == "bash" ]]; then
+        echo 'eval "$(starship init bash)"' >> ~/.bashrc
+        starship preset pastel-powerline > ~/.config/starship.toml
+    elif [[ $shell_choice == "zsh" ]]; then
+        echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+        starship preset pastel-powerline > ~/.config/starship.toml
+    elif [[ $shell_choice == "fish" ]]; then
+        echo 'starship init fish' >> ~/.config/fish/config.fish
+        starship preset pastel-powerline > ~/.config/starship.toml
+    else
+        echo "Virheellinen valinta, käytetään oletusasetuksia."
+    fi
+else
+    echo "Starshipin asennus ohitettu."
+fi
 
+echo "Skriptin suoritus päättynyt."
 #automatic reboot
 systemctl reboot && confirm
