@@ -18,7 +18,7 @@ git clone https://github.com/Elmu01/installer.sh.git installer
 ln -s $HOME/Documents/installer/Wallpapers $HOME/Documents/Wallpapers
 mkdir -p $HOME/.config/MangoHud
 ln -s $HOME/Documents/installer/MangoHud.conf $HOME/.config/MangoHud/MangoHud.conf
-ln -s $HOME/Documents/installer/neofetch $HOME/.config/neofetch
+ln -s $HOME/Documents/installer/fastfetch $HOME/.config/fastfetch
 cd installer
 git remote set-url origin git@github.com:Elmu01/installer.sh.git
 cd ../..
