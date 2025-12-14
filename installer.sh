@@ -24,7 +24,7 @@ git remote set-url origin git@github.com:Elmu01/installer.sh.git
 cd ../..
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam solaar piper libreoffice-still lutris noto-fonts-emoji code flatpak --noconfirm --needed 
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam solaar piper libreoffice-still lutris noto-fonts-emoji code nvtop flatpak --noconfirm --needed 
 #sudo pacman -S grub-customizer
 
 git clone https://aur.archlinux.org/yay.git
@@ -34,7 +34,7 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S webapp-manager vesktop fastfetch micro spotify appimagelauncher heroic-games-launcher onedriver mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
+yay -S webapp-manager vesktop fastfetch micro spotify appimagelauncher heroic-games-launcher onedriver rustdesk localsend mullvad-vpn mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
 
 #Virt-manager
 yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm
