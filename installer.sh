@@ -41,7 +41,8 @@ yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm
 sudo systemctl enable libvirtd.socket
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk flathub net.davidotek.pupgui2 flatpak flathub net.rpcs3.RPCS3 flatpak flathub io.missioncenter.MissionCenter flatpak flathub com.github.wwmm.easyeffects
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk net.davidotek.pupgui2 net.rpcs3.RPCS3 io.missioncenter.MissionCenter com.github.wwmm.easyeffects com.raggesilver.BlackBox
+
 
 #Lutris WineDependencies
 sudo pacman -S wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
