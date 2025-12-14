@@ -34,14 +34,14 @@ cd ..
 rm -rf yay
 
 #installs the programs from yay
-yay -S webapp-manager vesktop fastfetch micro spotify appimagelauncher heroic-games-launcher onedriver rustdesk localsend mullvad-vpn mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
+yay -S webapp-manager vesktop fastfetch micro spotify appimagelauncher heroic-games-launcher localsend mullvad-vpn mangohud lib32-mangohud ttf-firacode-nerd --noconfirm --needed
 
 #Virt-manager
 yay -S virt-manager dnsmasq iptables-nft qemu-desktop swtpm --noconfirm
 sudo systemctl enable libvirtd.socket
 
 #installs the program from flatpak
-flatpak install -y flathub io.github.Foldex.AdwSteamGtk net.davidotek.pupgui2 net.rpcs3.RPCS3 io.missioncenter.MissionCenter com.github.wwmm.easyeffects com.raggesilver.BlackBox
+flatpak install -y flathub io.github.Foldex.AdwSteamGtk net.davidotek.pupgui2 net.rpcs3.RPCS3 io.missioncenter.MissionCenter com.github.wwmm.easyeffects com.raggesilver.BlackBox com.rustdesk.RustDesk
 
 
 #Lutris WineDependencies
