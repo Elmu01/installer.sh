@@ -2,11 +2,7 @@
 
 read -r -d '' BANNER << EOF
 
-▗▄▄▄▖▗▖  ▗▖ ▗▄▄▖▗▄▄▄▖▗▄▖ ▗▖   ▗▖   ▗▄▄▄▖▗▄▄▖     ▗▄▄▄▖ ▗▄▖ ▗▄▄▖      ▗▄▖ ▗▄▄▖  ▗▄▄▖▗▖ ▗▖    ▗▄▄▖  ▗▄▖  ▗▄▄▖▗▄▄▄▖▗▄▄▄      ▗▄▄▖▗▖  ▗▖▗▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖  ▗▖ ▗▄▄▖
-  █  ▐▛▚▖▐▌▐▌     █ ▐▌ ▐▌▐▌   ▐▌   ▐▌   ▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌ ▐▌    ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌ ▐▌    ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▌  █    ▐▌    ▝▚▞▘▐▌     █  ▐▌   ▐▛▚▞▜▌▐▌   
-  █  ▐▌ ▝▜▌ ▝▀▚▖  █ ▐▛▀▜▌▐▌   ▐▌   ▐▛▀▀▘▐▛▀▚▖    ▐▛▀▀▘▐▌ ▐▌▐▛▀▚▖    ▐▛▀▜▌▐▛▀▚▖▐▌   ▐▛▀▜▌    ▐▛▀▚▖▐▛▀▜▌ ▝▀▚▖▐▛▀▀▘▐▌  █     ▝▀▚▖  ▐▌  ▝▀▚▖  █  ▐▛▀▀▘▐▌  ▐▌ ▝▀▚▖
-▗▄█▄▖▐▌  ▐▌▗▄▄▞▘  █ ▐▌ ▐▌▐▙▄▄▖▐▙▄▄▖▐▙▄▄▖▐▌ ▐▌    ▐▌   ▝▚▄▞▘▐▌ ▐▌    ▐▌ ▐▌▐▌ ▐▌▝▚▄▄▖▐▌ ▐▌    ▐▙▄▞▘▐▌ ▐▌▗▄▄▞▘▐▙▄▄▖▐▙▄▄▀    ▗▄▄▞▘  ▐▌ ▗▄▄▞▘  █  ▐▙▄▄▖▐▌  ▐▌▗▄▄▞▘
-
+ɪɴꜱᴛᴀʟʟᴇʀ ꜰᴏʀ ᴀʀᴄʜ ʙᴀꜱᴇᴅ ꜱʏꜱᴛᴇᴍꜱ
 
 EOF
 
@@ -28,7 +24,8 @@ git remote set-url origin git@github.com:Elmu01/installer.sh.git
 cd ../..
 
 #installs the programs from pacman
-sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam grub-customizer solaar piper libreoffice-still lutris noto-fonts-emoji ksysguard code flatpak --noconfirm --needed
+sudo pacman -S mesa vulkan-radeon libva-mesa-driver mesa-vdpau lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau git zsh os-prober btop bitwarden discord steam solaar piper libreoffice-still lutris noto-fonts-emoji code flatpak --noconfirm --needed 
+#sudo pacman -S grub-customizer
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -64,4 +61,4 @@ starship preset pastel-powerline > ~/.config/starship.toml
 chsh -s /bin/zsh
 
 #automatic reboot
-systemctl reboot
+systemctl reboot && confirm
